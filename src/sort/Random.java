@@ -17,10 +17,10 @@ public class Random {
      */
     public static int[] getArray(int n, int start, int end){
         int[] array = new int[n];
-        int real_end = end-start;
+        int real_end = end - start;
         java.util.Random random = new java.util.Random();
         for(int i = 0; i < array.length; i++){
-            array[i] = random.nextInt(real_end)+start;
+            array[i] = random.nextInt(real_end) + start;
         }
         return array;
     }

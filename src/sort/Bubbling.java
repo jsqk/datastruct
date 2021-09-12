@@ -59,7 +59,7 @@ public class Bubbling {
     }
 
     public static void main(String[] args) {
-        int[] arr = Random.getArray(8, -5, 20);
+        int[] arr = Random.getArray(100000, -100000, 100000);
         System.out.println("排序前");
         Sorts.show(arr);
         Bubbling.bub_sort_desc(arr);

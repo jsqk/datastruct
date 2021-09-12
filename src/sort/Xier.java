@@ -34,11 +34,12 @@ public class Xier {
         // 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
         // 9, 8, 7, 5, 6, 4, 3, 2, 1, 0
 //        int[] arr = {9, 8, 7, 5, 6, 4, 3, 2, 1, 0};
-        int[] arr = Random.getArray(10, -4, 20);
+        int[] arr = Random.getArray(100000, -100000, 100000);
         System.out.println("生产的随机序列为：");
         Sorts.show(arr);
         Xier.sheel_sort(arr);
         System.out.println("排序后的结果为：");
         Sorts.show(arr);
+        System.out.println("是否顺序: " + Basic.isOrder(arr));
     }
 }
